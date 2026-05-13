@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { TuitionI as Tuition, TuitionI as TuitionInterface } from "../models/TuitionI";
-import { Car } from "../models/CarI";
+import { TuitionI as Tuition, TuitionI as TuitionInterface } from "../models/Tuitioni";
+import { Car } from "../models/Cari";
 
 export class TuitionController {
   public async getAllTuitions(req: Request, res: Response) {

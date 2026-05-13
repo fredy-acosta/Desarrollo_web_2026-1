@@ -1,6 +1,6 @@
 import { DataTypes, Model } from "sequelize";
 import { sequelize } from "../database/db";
-import { TuitionI as TuitionModel } from "./TuitionI";
+import { TuitionI as TuitionModel } from "./Tuitioni";
 
 export interface CarI {
   id?: number;
