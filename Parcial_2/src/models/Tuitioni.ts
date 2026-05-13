@@ -31,7 +31,7 @@ TuitionI.init(
       allowNull: false,
       validate: {
         notNull: { msg: "Date matricula is required" },
-        isDate: { msg: "Date matricula must be a valid date" },
+        isDate: true,
       },
     },
     ciudad: {

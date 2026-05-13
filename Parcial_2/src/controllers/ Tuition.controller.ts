@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { TuitionI as Tuition, TuitionI as TuitionInterface } from "../models/Tuitioni";
+import { TuitionI as Tuition, TuitionI, TuitionI as TuitionInterface } from "../models/Tuitioni";
 import { Car } from "../models/Cari";
 
 export class TuitionController {
@@ -52,7 +52,7 @@ export class TuitionController {
         res.status(404).json({ error: "Car not found or inactive" });
         return;
       }
-      const body: TuitionInterface = { date_matricula, ciudad, pago, car_id, status };
+      const body = { date_matricula, ciudad, pago, car_id, status } as any;
       const newTuition = await Tuition.create({ ...body });
       res.status(201).json(newTuition);
     } catch (error: any) {
@@ -76,7 +76,7 @@ export class TuitionController {
           return;
         }
       }
-      const body: TuitionInterface = { date_matricula, ciudad, pago, car_id, status };
+      const body = { date_matricula, ciudad, pago, car_id, status } as any;
       await tuitionExist.update(body, { where: { id: pk } });
       res.status(200).json(tuitionExist);
     } catch (error: any) {
