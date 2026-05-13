@@ -2,17 +2,21 @@
 
 ## MySQL
 
-> 📷 _[Imagen: Creación de base de datos en DBeaver — MySQL]_
+![DBeaver MySQL - Paso 1](image1.png)
+
+![DBeaver MySQL - Paso 2](imagenes/image2.png)
 
 ## PostgreSQL
 
-> 📷 _[Imagen: Creación de base de datos en DBeaver — PostgreSQL]_
+![DBeaver PostgreSQL - Paso 1](imagenes/image3.png)
+
+![DBeaver PostgreSQL - Paso 2](imagenes/image4.png)
 
 ---
 
 ## Ahora Creación de modelos
 
-Este fue el prompt que use para la creación de los modelos:
+Este fue el prompt que usé para la creación de los modelos:
 
 > créame los modelos de Node.js con relaciones incluidas (no hagas relaciones circulares por favor) adaptados al siguiente ejemplo, todos los modelos deben correr en cualquiera de los 4 motores (oracle, mysql, sql server, postgres) y deben tener un status para seleccionar active o inactive, esto para manejar el borrado lógico, los crearás en inglés y con I mayúscula al final, cuando haya una relación de muchos a muchos, crea una tabla puente donde solo lleguen ambos ids y el campo de status, las relaciones no las hagas por medio de un archivo associations, ah y también agrégale validaciones y restricciones, las quiero tal como en el ejemplo:
 
@@ -110,17 +114,33 @@ Sale.belongsTo(Client, {
 
 ### CarI.ts
 
-> 📷 _[Imagen: Código del modelo CarI.ts]_
+![CarI.ts - Parte 1](imagenes/image5.png)
+
+![CarI.ts - Parte 2](imagenes/image6.png)
+
+![CarI.ts - Parte 3](imagenes/image7.png)
+
+![CarI.ts - Parte 4](imagenes/image8.png)
+
+![CarI.ts - Parte 5](imagenes/image9.png)
+
+![CarI.ts - Parte 6](imagenes/image10.png)
 
 ### TuitionI.ts
 
-> 📷 _[Imagen: Código del modelo TuitionI.ts]_
+![TuitionI.ts - Parte 1](imagenes/image11.png)
+
+![TuitionI.ts - Parte 2](imagenes/image12.png)
+
+![TuitionI.ts - Parte 3](imagenes/image13.png)
+
+![TuitionI.ts - Parte 4](imagenes/image14.png)
 
 ---
 
 ## Creación de los controladores
 
-Este fue el prompt que use para crear los controladores:
+Este fue el prompt que usé para crear los controladores:
 
 > hazme los controladores de mis modelos en base a este ejemplo, ten en cuenta que ahora los archivos de controladores se llaman `modelo.controller.ts`, ejemplo: `client.controller.ts`
 
@@ -212,15 +232,25 @@ export class ClientController {
 }
 ```
 
-### Controladores
+### Car.controller.ts
 
-#### Car.controller.ts
+![Car.controller.ts - Parte 1](imagenes/image15.png)
 
-> 📷 _[Imagen: Código del controlador Car.controller.ts]_
+![Car.controller.ts - Parte 2](imagenes/image16.png)
 
-#### Tuition.controller.ts
+![Car.controller.ts - Parte 3](imagenes/image17.png)
 
-> 📷 _[Imagen: Código del controlador Tuition.controller.ts]_
+![Car.controller.ts - Parte 4](imagenes/image18.png)
+
+### Tuition.controller.ts
+
+![Tuition.controller.ts - Parte 1](imagenes/image19.png)
+
+![Tuition.controller.ts - Parte 2](imagenes/image20.png)
+
+![Tuition.controller.ts - Parte 3](imagenes/image21.png)
+
+![Tuition.controller.ts - Parte 4](imagenes/image22.png)
 
 ---
 
@@ -255,17 +285,19 @@ export class CategoryRoutes {
 
 ### Car.ts (rutas)
 
-> 📷 _[Imagen: Código de rutas Car.ts]_
+![Car.ts rutas](imagenes/image23.png)
+
+![Car.ts rutas - Parte 2](imagenes/image24.png)
 
 ### Tuition.ts (rutas)
 
-> 📷 _[Imagen: Código de rutas Tuition.ts]_
+![Tuition.ts rutas](imagenes/image25.png)
 
 ---
 
 ## Después de esto creamos las tablas en físico en DBeaver
 
-> 📷 _[Imagen: Tablas creadas físicamente en DBeaver]_
+![Tablas en DBeaver](imagenes/image26.png)
 
 ---
 
@@ -358,4 +390,6 @@ createFakeData().then(() => {
 
 ### faker.ts
 
-> 📷 _[Imagen: Código del archivo faker.ts generado]_
+![faker.ts - Parte 1](imagenes/image27.png)
+
+![faker.ts - Parte 2](imagenes/image28.png)
